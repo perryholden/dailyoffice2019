@@ -238,7 +238,7 @@ const settings = () => {
   };
 
   const setThemeIcon = () => {
-    document.getElementsByClassName("theme-selector").forEach((element) => {
+    Array.from(document.getElementsByClassName("theme-selector")).forEach((element) => {
       element.classList.remove("fas");
       element.classList.add("fal");
     });
@@ -302,7 +302,7 @@ const settings = () => {
           }
         }
         document.getElementById("html").className = theme;
-        document.getElementsByClassName("theme-selector").forEach((element) => {
+        Array.from(document.getElementsByClassName("theme-selector")).forEach((element) => {
           element.classList.remove("fas");
           element.classList.add("fal");
         });
